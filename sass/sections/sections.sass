@@ -1,0 +1,99 @@
+@import ../var/variables
+
+.section1
+	padding-bottom: 0
+
+.section1__img-wrapper,
+.section4__img-wrapper
+	position: relative
+	right: -50px
+	text-align: right
+	height: 730px
+	overflow: hidden
+	.section1__img,
+	.section4__img
+		width: 100%
+
+.section2,
+.section5
+	background: $secondary-color
+	.section2__p
+		margin: 0 25px 50px 0
+.section2__list,
+.section4__list
+	margin: 0
+	padding: 0
+	.section2__list-item,
+	.section4__list-item
+		position: relative
+		margin-bottom: 50px
+		list-style-type: none
+		.list-item__no
+			position: absolute
+			top: -25px
+			font-family: $header-font
+			color: $secondary-color
+			font-size: 90px
+			font-weight: 700
+
+.section3
+	background: url('../../img/middle-bg.jpg')
+	background-size: cover
+	background-position: center
+	height: 100vh
+
+.section4__list
+	border-left: 4px solid $main-color
+	padding-left: 25px
+	margin-bottom: 50px
+	.section4__list-item
+		&:last-of-type
+			margin-bottom: 0
+.section5__wrapper
+	margin-top: 100px
+.section5__card
+	width: 100%
+	background: $light-font
+	border-radius: 16px
+	margin: 0 0 50px 0
+	-webkit-box-shadow: 0px 10px 90px -33px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 10px 90px -33px rgba(0,0,0,0.75)
+	box-shadow: 0px 10px 90px -33px rgba(0,0,0,0.75)
+	transition: .3s
+	&:hover
+		transform: scale(1.1)
+		-webkit-box-shadow: 0px 10px 112px -23px rgba(0,0,0,0.75)
+		-moz-box-shadow: 0px 10px 112px -23px rgba(0,0,0,0.75)
+		box-shadow: 0px 10px 112px -23px rgba(0,0,0,0.75)
+	.section5__card-title
+		position: relative
+		margin-top: 0
+		background: $main-color
+		color: $light-font
+		padding: 20px
+		border-top-left-radius: 16px
+		border-top-right-radius: 16px
+		.section5__card-no
+			position: absolute
+			top: -25px
+			left: 25px
+			font-family: $header-font
+			color: $secondary-color
+			font-size: 90px
+			font-weight: 700
+	.section5__card-p
+		padding: 20px
+
+
+
+@media screen and (max-width: $large-size)
+	.section1__img-wrapper
+		height: 500px
+	.section4__img-wrapper
+		right: -40%
+@media screen and (max-width: $mobile-size)
+	.section1__img-wrapper,
+	.section4__img-wrapper
+		height: 275px
+	.section4__img-wrapper
+		right: -25%
