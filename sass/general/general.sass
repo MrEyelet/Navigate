@@ -1,17 +1,65 @@
-$main-color: rgba(0, 113, 206, 1)
-$secondary-color:rgba(0, 0, 0, 0.05)
-$third-color: rgba(0, 113, 206, 0.3)
+@import ../var/variables
 
-$dark-font: #2F2F2F
-$light-font:  #ffffff
-
-$header-font: 'Montserrat', sans-serif
-$body-font: 'Domine', serif
+html
+	scroll-behavior: smooth
 
 body
 	font-family: $body-font
 	line-height: 200%
 h1,h2,h3,h4,h5,h6
+	position: relative
 	font-family: $header-font
-section, footer
-	padding: 100px
+	padding-bottom: 50px
+// h1
+// 	font-size: calc(35px + (60 - 35) * ((100vw - 300px) / (1600 - 300)))
+
+// h2
+// 	font-size: calc(25px + (45 - 25) * ((100vw - 300px) / (1600 - 300)))
+
+// h3
+// 	font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)))
+
+// h4
+// 	font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)))
+
+// h5
+// 	font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)))
+
+// h6
+// 	font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)))
+h1,h2,h3,h4,h5,h6
+	&:before
+		content: ''
+		position: absolute
+		width: 50px
+		height: 5px
+		background: $main-color
+		bottom: 10px
+		left: 0
+h1
+	&:before
+		background: $light-font
+
+header,section, footer
+	position: relative
+	padding: 100px 50px
+.wrapper
+	overflow: hidden
+.btn
+	display: inline-block
+	max-width: 200px
+	padding: 10px 25px
+	font-family: $header-font
+	border: 2px solid $light-font
+	color: $light-font
+	text-decoration: none
+	border-radius: 8px
+	transition: .3s
+	&:hover
+		background: $light-font
+		color: $main-color
+
+
+@media screen and (max-width: $mobile-size)
+	header,section, footer
+		padding: 50px 20px
