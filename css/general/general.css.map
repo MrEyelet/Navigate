@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUA,IAAI,CACH,WAAW,CAHA,cAAe,CAI1B,WAAW,CAAE,IAAI,CAClB,iBAAiB,CAChB,WAAW,CAPE,uBAAwB,CAQtC,cAAe,CACd,OAAO,CAAE,KAAK",
+"sources": ["../../sass/general/general.sass"],
+"names": [],
+"file": "general.css"
+}

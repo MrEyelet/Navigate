@@ -1,0 +1,67 @@
+.fx-parent {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+}
+.fx-wrap {
+    -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+.fx-center {
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+            justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+}
+.fx-centered-v {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+}
+.fx-centered-h {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.fx-space-a {
+  -ms-flex-pack: distribute;
+      -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.fx-space-b {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.fx-start-v {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.fx-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+}
+.fx-child {
+    -webkit-box-flex: 1 350px;
+        -ms-flex: 1 1 350px;
+            -webkit-flex: 1 1 350px;
+            flex: 1 1 350px;
+}
+
+
+
+
