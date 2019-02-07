@@ -55,11 +55,17 @@
             -webkit-flex-direction: column;
             flex-direction: column;
 }
-.fx-child {
-    -webkit-box-flex: 1 350px;
-        -ms-flex: 1 1 350px;
-            -webkit-flex: 1 1 350px;
-            flex: 1 1 350px;
+.fx-child-g-s-1 {
+    -webkit-box-flex: 1 300px;
+        -ms-flex: 1 1 300px;
+            -webkit-flex: 1 1 300px;
+            flex: 1 1 300px;
+}
+.fx-child-g-s-0 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 385px;
+        -ms-flex: 0 0 385px;
+            flex: 0 0 385px;
 }
 
 
