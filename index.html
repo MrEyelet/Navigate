@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/general/general.css">
 	<link rel="stylesheet" type="text/css" href="css/header/header.css">
 	<link rel="stylesheet" type="text/css" href="css/sections/sections.css">
+	<link rel="stylesheet" type="text/css" href="css/footer/footer.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -86,15 +87,25 @@
 			<h2>Autoryzowany Dystrybutor DJI Enterprise</h2>
 			<p>Jesteśmy autoryzowanym dystrybutorem bezzałogowych statków powietrznych marki DJI Enterprise, a także autoryzowanym serwisem dla serii Matrice 200 i 600. Dzięki temu nasi klienci mogą liczyć na kompleksową pomoc podczas wyboru oferty, a także pełne wsparcie techniczne</p>
 		</section>
-		<footer>
-			<form>
-			<p>*Wyrażam zgodę na przetwarzanie przez firmę NaviGate sp. z o.o. z siedzibą w Krakowie, ul. Wadowicka 8A, 30-415 Kraków, KRS: 0000547284, moich danych osobowych zawartych w niniejszym formularzu, w celu udzielenia odpowiedzi na wysłane pytanie. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany o możliwości cofnięcia zgody w dowolnym momencie.</p>
-			<p>Klauzula informacyjna:
-		Administratorem Państwa danych osobowych jest firma NaviGate sp. z o.o. z siedzibą w Krakowie, ul. Wadowicka 8A, 30-415 Kraków. Informujemy, że Państwa zgoda może zostać cofnięta w dowolnym momencie poprzez wysłanie wiadomości e-mail na adres Administratora danych: sklep@navigate.pl spod adresu, którego zgoda dotyczy. Państwa dane będą przetwarzane w sposób zautomatyzowany w tym również w formie profilowania. Zautomatyzowane podejmowanie decyzji będzie odbywało się na zasadach określonych w Polityce Bezpieczeństwa, konsekwencją takiego przetwarzania będzie wysyłka reklamy kontekstowej. Państwa dane nie będą przekazywane poza EOG ani udostępniane organizacjom międzynarodowym. Posiadają Państwo prawo do żądania od administratora dostępu do danych osobowych, prawo do ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do wniesienia sprzeciwu wobec przetwarzania, prawo do przenoszenia danych. 
-
-		Więcej informacji dotyczących przetwarzania danych osobowych znajdziecie Państwo w naszej Polityce Prywatności.</p>
+		<footer class="form-section">
+			<h2 class="form-section__header">Wyślij zapytanie ofertowe</h2>
+			<form class="form">
+				<label>Imię i nazwisko</label><br />
+				<input class="form__user-name" name="username" type="text" value="" placeholder="Podaj swoje imię i nazwisko" required/> 
+				<label>Telefon</label><br />
+				<input class="form__user-phone" name="userphone" type="number" value="" placeholder="Twój numer telefonu" required/>
+				<label>Email</label> <br />
+				<input class="form__user-email" name="user-mail" type="e-mail" value="" placeholder="Twój adres email" required/>
+				<label>Miasto</label><br />
+				<input class="form__user-city" name="user-city" type="text" value="" placeholder="Twoje miejsce zamieszkania" required/>
+				<label>Treść wiadomości</label> <br />
+				<textarea class="form__user-msg" cols="30" rows="8" placeholder="Tutaj wpisz swoją wiadomość" required></textarea>
+				<button class="btn btn__second" type="submit" value="Submit">Submit</button>
 			</form>
-
+			<p class="form-section__info">*Wyrażam zgodę na przetwarzanie przez firmę NaviGate sp. z o.o. z siedzibą w Krakowie, ul. Wadowicka 8A, 30-415 Kraków, KRS: 0000547284, moich danych osobowych zawartych w niniejszym formularzu, w celu udzielenia odpowiedzi na wysłane pytanie. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany o możliwości cofnięcia zgody w dowolnym momencie.</p>
+			<p class="form-section__info">Klauzula informacyjna:
+			Administratorem Państwa danych osobowych jest firma NaviGate sp. z o.o. z siedzibą w Krakowie, ul. Wadowicka 8A, 30-415 Kraków. Informujemy, że Państwa zgoda może zostać cofnięta w dowolnym momencie poprzez wysłanie wiadomości e-mail na adres Administratora danych: sklep@navigate.pl spod adresu, którego zgoda dotyczy. Państwa dane będą przetwarzane w sposób zautomatyzowany w tym również w formie profilowania. Zautomatyzowane podejmowanie decyzji będzie odbywało się na zasadach określonych w Polityce Bezpieczeństwa, konsekwencją takiego przetwarzania będzie wysyłka reklamy kontekstowej. Państwa dane nie będą przekazywane poza EOG ani udostępniane organizacjom międzynarodowym. Posiadają Państwo prawo do żądania od administratora dostępu do danych osobowych, prawo do ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo do wniesienia sprzeciwu wobec przetwarzania, prawo do przenoszenia danych.
+			Więcej informacji dotyczących przetwarzania danych osobowych znajdziecie Państwo w naszej Polityce Prywatności.</p>
 		</footer>
 </div>
 </body>
