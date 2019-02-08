@@ -16,7 +16,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__img-wrapper">
+			<div class="header__logo-wrapper">
 				<img class="header__logo" src="img/logo-small.png" alt="navigate technologie pomiarowe">
 			</div>
 			<div class="hero fx-parent fx-centered-v fx-wrap">
@@ -25,20 +25,32 @@
 					<p class="hero__p">Przedsprzedaż drona, który gwarantuje najwyższą dokładność.</p>
 					<a href="#section1" class="btn btn__main">Dowiedz się więcej</a>
 				</div>
-				<img class="hero__img" src="img/phantom.png" alt="DJI Phantom">
+				<div class="header__img-wrapper">
+					<div class="pulse">
+					<!-- <span class="pulse-inner"></span> -->
+					</div>
+					<img class="hero__img" src="img/phantom.png" alt="DJI Phantom">
+				</div>
 			</div>
 			<img class="header__img" src="img/dji-logo-small.png" alt="dji-autoryzowany-dystrybutor">
 		</header>
-		<section id="section1" class="fx-parent fx-center fx-wrap section1">
-			<p id="appear-left" class="fx-child-g-s-1 section1__p">Mapowanie terenu z dronem DJI Phantom 4 RTK stanie się o wiele prostsze.Wybierz bezzałogowy statek powietrzny, który jest najbardziej kompaktowym i najdokładniejszym rozwiązaniem do mapowania z niskiego pułapu.</p>
-			<div class="fx-child-g-s-1 section1__img-wrapper">
-				<img id="appear-right" class="section1__img" src="img/controller-dji-phantom.png" alt="">
+		<section id="section1" class="section1">
+			<div id="appear-left" class="fx-parent fx-center fx-wrap section1__wrapper">
+				<div class="section__txt fx-child-g-s-1">
+					<h2 class="section1__header">Mapowanie terenu</h2>
+					<p id="appear-left" class="section1__p">Mapowanie terenu z dronem DJI Phantom 4 RTK stanie się o wiele prostsze. <br /><br />Wybierz bezzałogowy statek powietrzny, który jest najbardziej kompaktowym i najdokładniejszym rozwiązaniem do mapowania z niskiego pułapu.</p>
+				</div>
+				<div class="fx-child-g-s-1 section1__img-wrapper">
+					<img id="appear-right" class="section1__img" src="img/controller-dji-phantom.png" alt="">
+				</div>
 			</div>
 		</section>
 		<section id="appear-bottom-first" class="section2">
-			<h2 class="section2__header">Sprawdź nową generację mapowania</h2>
 			<div class="fx-parent fx-center fx-wrap section2__wrapper">
-				<p class="section2__p fx-child-g-s-1">DJI po raz kolejny wyznacza nowe standardy na rynku bezzałogowych statków powietrznych. Dzięki nowemu systemowi dron DJI Phantom 4 RTK pozwoli Ci uzyskać jeszcze wyższą dokładność. Bezzałogowy statek powietrzny Phantom 4 RTK gwarantuje centymetrową dokładność nawet przy zmniejszonej ilości punktów kontroli naziemnej.</p>
+				<div class="section__txt fx-child-g-s-1">
+					<h2 class="section2__header">Sprawdź nową generację mapowania</h2>
+					<p class="section2__p">DJI po raz kolejny wyznacza nowe standardy na rynku bezzałogowych statków powietrznych. Dzięki nowemu systemowi dron DJI Phantom 4 RTK pozwoli Ci uzyskać jeszcze wyższą dokładność. Bezzałogowy statek powietrzny Phantom 4 RTK gwarantuje centymetrową dokładność nawet przy zmniejszonej ilości punktów kontroli naziemnej.</p>
+				</div>
 				<ul class="section2__list fx-child-g-s-1">
 					<li id="appear-bottom-first" class="section2__list-item"><span class="list-item__no">1</span>1cm+1ppm RTK Dokładność pozycjonowania poziomego</li>
 					<li id="appear-bottom-second" class="section2__list-item"><span class="list-item__no">2</span>1.5cm+1ppmRTK Dokładność pozycjonowania pionowego</li>
@@ -50,16 +62,18 @@
 			<!--backgorund section-->
 		</section>
 		<section class="section4">
-			<h2>Kluczowe cechy drona DJI Phantom 4 RTK</h2>
 			<div id="appear-left" class="fx-parent fx-centered-h fx-wrap section4__wrapper">
-				<ul class="fx-child-g-s-1 section4__list">
-					<li class="section4__list-item">Moduł RTK</li>
-					<li class="section4__list-item">Sensor CMOS 1”</li>
-					<li class="section4__list-item">GS RTK APP</li>
-					<li class="section4__list-item">Synchronizacja czasu</li>
-					<li class="section4__list-item">OcuSync (system do transmisji obrazu)</li>
-					<li class="section4__list-item">D-RTK 2 GNSS Stacja mobilna</li>
-				</ul>
+				<div class="section__txt fx-child-g-s-1">
+					<h2>Kluczowe cechy drona DJI Phantom 4 RTK</h2>
+					<ul class="section4__list">
+						<li class="section4__list-item">Moduł RTK</li>
+						<li class="section4__list-item">Sensor CMOS 1”</li>
+						<li class="section4__list-item">GS RTK APP</li>
+						<li class="section4__list-item">Synchronizacja czasu</li>
+						<li class="section4__list-item">OcuSync (system do transmisji obrazu)</li>
+						<li class="section4__list-item">D-RTK 2 GNSS Stacja mobilna</li>
+					</ul>
+				</div>
 				<div id="appear-right" class="fx-child-g-s-1 section4__img-wrapper">
 					<img  class="section4__img"src="img/flying-drone.png" alt="">	
 				</div>
@@ -86,9 +100,11 @@
 			</div>
 		</section>
 		<section class="section6">
-			<h2>Autoryzowany Dystrybutor DJI Enterprise</h2>
 			<div id="appear-left" class="fx-parent fx-centered-h fx-wrap section6__wrapper">
-			<p class="fx-child-g-s-1 section6__p">Jesteśmy autoryzowanym dystrybutorem bezzałogowych statków powietrznych marki DJI Enterprise, a także autoryzowanym serwisem dla serii Matrice 200 i 600. <br/><br/>Dzięki temu nasi klienci mogą liczyć na kompleksową pomoc podczas wyboru oferty, a także pełne wsparcie techniczne</p>
+			<div class="section__txt fx-child-g-s-1">
+				<h2>Autoryzowany Dystrybutor DJI Enterprise</h2>
+				<p class="fx-child-g-s-1 section6__p">Jesteśmy autoryzowanym dystrybutorem bezzałogowych statków powietrznych marki DJI Enterprise, a także autoryzowanym serwisem dla serii Matrice 200 i 600. <br/><br/>Dzięki temu nasi klienci mogą liczyć na kompleksową pomoc podczas wyboru oferty, a także pełne wsparcie techniczne</p>
+			</div>
 				<div id="appear-right" class="fx-child-g-s-1 section6__img-wrapper">
 					<img  class="section6__img" src="img/drone-operator.png" alt="">	
 				</div>
@@ -96,7 +112,7 @@
 		</section>
 		<footer class="form-section">
 			<h2 class="form-section__header">Wyślij zapytanie ofertowe</h2>
-			<form class="form" action="contactform.php" method="post">
+			<form id="appear-bottom-first"class="form" action="https://formspree.io/your@email.com"" method="POST">
 				<label>Imię i nazwisko</label><br />
 				<input class="form__user-name" name="username" type="text" value="" placeholder="Podaj swoje imię i nazwisko" required/> 
 				<label>Telefon</label><br />
@@ -107,6 +123,10 @@
 				<input class="form__user-city" name="usercity" type="text" value="" placeholder="Twoje miejsce zamieszkania" required/>
 				<label>Treść wiadomości</label> <br />
 				<textarea class="form__user-msg" name="usermsg" cols="30" rows="8" placeholder="Tutaj wpisz swoją wiadomość" required></textarea>
+				<label class="form__checkbox">
+				  <input type="checkbox" class="checkbox" required>
+				  <span class="checkmark">Oświadczam, że zaponzałem/am się z polityką prywatności.</span>
+				</label>
 				<button class="btn btn__second" type="submit" value="Submit">Submit</button>
 			</form>
 			<p class="form-section__info">*Wyrażam zgodę na przetwarzanie przez firmę NaviGate sp. z o.o. z siedzibą w Krakowie, ul. Wadowicka 8A, 30-415 Kraków, KRS: 0000547284, moich danych osobowych zawartych w niniejszym formularzu, w celu udzielenia odpowiedzi na wysłane pytanie. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany o możliwości cofnięcia zgody w dowolnym momencie.</p>
