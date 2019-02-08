@@ -1,7 +1,11 @@
 @import ../var/variables
 
+*
+	box-sizing: border-box
+
 html
 	scroll-behavior: smooth
+	color: $font-color
 
 body
 	font-family: $body-font
@@ -43,21 +47,35 @@ h1
 header,section, footer
 	position: relative
 	padding: 100px 50px
+
 .wrapper
 	overflow: hidden
+
 .btn
 	display: inline-block
-	max-width: 200px
 	padding: 10px 25px
+	border-radius: 8px
+	transition: .3s
+	&:hover
+		cursor: pointer
+.btn__main
 	font-family: $header-font
 	border: 2px solid $light-font
 	color: $light-font
 	text-decoration: none
-	border-radius: 8px
-	transition: .3s
 	&:hover
 		background: $light-font
 		color: $main-color
+.btn__second
+	font-family: $header-font
+	border: 2px solid $main-color
+	background: $main-color
+	color: $light-font
+	text-decoration: none
+	&:hover
+		background: transparent
+		color: $main-color
+
 
 
 @media screen and (max-width: $mobile-size)
