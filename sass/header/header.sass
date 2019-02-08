@@ -2,7 +2,7 @@
 
 .header
 	padding: 20px 50px 100px
-	.header__img-wrapper
+	.header__logo-wrapper
 		max-width: 250px
 		.header__logo
 			width: 100%
@@ -20,16 +20,59 @@
 	.hero__header,
 	.hero__p
 		color: $light-font
+	.header__img-wrapper
+		position: relative
+		.pulse
+			position: absolute
+			top: 30px
+			left: 51%
+			margin-left: -$circle-radius
+			width: ($circle-radius * 2)
+			height: ($circle-radius * 2)
+			line-height: ($circle-radius * 2)
+			color: $blue-pulse
+			z-index: -1
+			&:before,
+			&:after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				border-radius: 100%
+				-webkit-box-shadow: 0px 0px 94px -20px $blue-pulse
+				-moz-box-shadow: 0px 0px 94px -20px $blue-pulse
+				box-shadow: 0px 0px 94px -20px $blue-pulse
+				animation: pulse 1.5s ease-in-out 0s infinite
+			&:after 
+				top: -5px
+				left: -5px
+				right: -5px
+				bottom: -5px
+
+			@keyframes pulse
+				0%,
+				100% 
+					transform: scale(1.25)
+					opacity: 0
+
+				48%,
+				52% 
+					transform: scale(1)
+					opacity: 1
 	.header__img
 		position: absolute
 		right: 50px
 		bottom: 100px
 
+
+
 @media screen and (min-width: $big-size)
 	.header
 		&:before
 			height: 110%
-			left: -22%
+			left: -31%
 			top: -22%
 @media screen and (max-width: $large-size)
 	.header
