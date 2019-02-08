@@ -4,21 +4,27 @@
 	padding-bottom: 0
 
 .section1__img-wrapper,
-.section4__img-wrapper
+.section4__img-wrapper,
+.section6__img-wrapper
 	position: relative
 	right: -50px
 	text-align: right
 	height: 730px
 	overflow: hidden
 	.section1__img,
-	.section4__img
+	.section4__img,
+	.section6__img
 		width: 100%
+
+.section4__img-wrapper
+	height: auto
 
 .section2,
 .section5
 	background: $secondary-color
 	.section2__p
 		margin: 0 25px 50px 0
+
 .section2__list,
 .section4__list
 	margin: 0
@@ -32,7 +38,7 @@
 			position: absolute
 			top: -25px
 			font-family: $header-font
-			color: $secondary-color
+			color: $third-color
 			font-size: 90px
 			font-weight: 700
 
@@ -42,13 +48,40 @@
 	background-position: center
 	height: 100vh
 
+.section4,
+.section6
+	&:before
+		content: ''
+		position: absolute
+		width: 700px
+		height: 500px
+		background: $main-color
+		left: -162px
+		border-radius: 138px
+		bottom: -250px
+		z-index: -1
+
+.section6
+	&:before
+		height: 200px
+		bottom: 200px
+
 .section4__list
-	border-left: 4px solid $main-color
+	position: relative
 	padding-left: 25px
 	margin-bottom: 50px
+	&:before
+		content: ''
+		position: absolute
+		width: 5px
+		height: 48%
+		background: $main-color
+		left: 0
 	.section4__list-item
+		margin-bottom: 15px
 		&:last-of-type
 			margin-bottom: 0
+
 .section5__wrapper
 	margin-top: 100px
 .section5__card
@@ -62,7 +95,6 @@
 	box-shadow: 0px 10px 90px -33px rgba(0,0,0,0.75)
 	transition: .3s
 	&:hover
-		transform: scale(1.1)
 		-webkit-box-shadow: 0px 10px 112px -23px rgba(0,0,0,0.75)
 		-moz-box-shadow: 0px 10px 112px -23px rgba(0,0,0,0.75)
 		box-shadow: 0px 10px 112px -23px rgba(0,0,0,0.75)
@@ -79,22 +111,19 @@
 			top: -25px
 			left: 25px
 			font-family: $header-font
-			color: $secondary-color
+			color: $third-color
 			font-size: 90px
 			font-weight: 700
 	.section5__card-p
 		padding: 20px
 
-
-
+@media screen and (min-width: $big-size)
+	.section4__img-wrapper,
+	.section6__img-wrapper
+		height: auto
 @media screen and (max-width: $large-size)
 	.section1__img-wrapper
-		height: 500px
-	.section4__img-wrapper
-		right: -40%
+		height: 450px
 @media screen and (max-width: $mobile-size)
-	.section1__img-wrapper,
-	.section4__img-wrapper
-		height: 325px
-	.section4__img-wrapper
-		right: -25%
+	.section1__img-wrapper
+		height: 300px
