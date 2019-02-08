@@ -96,17 +96,17 @@
 		</section>
 		<footer class="form-section">
 			<h2 class="form-section__header">Wyślij zapytanie ofertowe</h2>
-			<form class="form">
+			<form class="form" action="contactform.php" method="post">
 				<label>Imię i nazwisko</label><br />
 				<input class="form__user-name" name="username" type="text" value="" placeholder="Podaj swoje imię i nazwisko" required/> 
 				<label>Telefon</label><br />
 				<input class="form__user-phone" name="userphone" type="number" value="" placeholder="Twój numer telefonu" required/>
 				<label>Email</label> <br />
-				<input class="form__user-email" name="user-mail" type="e-mail" value="" placeholder="Twój adres email" required/>
+				<input class="form__user-email" name="usermail" type="email" value="" placeholder="Twój adres email" required/>
 				<label>Miasto</label><br />
-				<input class="form__user-city" name="user-city" type="text" value="" placeholder="Twoje miejsce zamieszkania" required/>
+				<input class="form__user-city" name="usercity" type="text" value="" placeholder="Twoje miejsce zamieszkania" required/>
 				<label>Treść wiadomości</label> <br />
-				<textarea class="form__user-msg" cols="30" rows="8" placeholder="Tutaj wpisz swoją wiadomość" required></textarea>
+				<textarea class="form__user-msg" name="usermsg" cols="30" rows="8" placeholder="Tutaj wpisz swoją wiadomość" required></textarea>
 				<button class="btn btn__second" type="submit" value="Submit">Submit</button>
 			</form>
 			<p class="form-section__info">*Wyrażam zgodę na przetwarzanie przez firmę NaviGate sp. z o.o. z siedzibą w Krakowie, ul. Wadowicka 8A, 30-415 Kraków, KRS: 0000547284, moich danych osobowych zawartych w niniejszym formularzu, w celu udzielenia odpowiedzi na wysłane pytanie. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany o możliwości cofnięcia zgody w dowolnym momencie.</p>
